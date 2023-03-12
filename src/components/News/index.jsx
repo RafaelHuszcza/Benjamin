@@ -1,24 +1,22 @@
 import React, { useState } from "react";
 
-
 import "./styles.css";
-import NewsDoc from "../../contentNews/news.json"
+import NewsDoc from "../../contentNews/news.json";
 
-
+import dados from "../../assets/Benjamin.jpg";
 
 const News = () => {
-
   const [news, setNews] = useState(NewsDoc);
-  
-
 
   return (
     <div className="wrap">
-      <div className="cards-container">
-      {news.map(card => <div className="card"><img src={card.image}></img></div>)}           
- 
-
-      </div>     
+      <div className="div">
+        <img src={dados}></img>
+        <span>
+          Benjamin Perdido no dia 12/03/2023 Caso Encontre entre em contato{" "}
+        </span>
+        <span>Whatsapp: 53 992411640 - Rafael</span>
+      </div>
     </div>
   );
 };

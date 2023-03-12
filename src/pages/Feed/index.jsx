@@ -1,21 +1,12 @@
-import React from 'react';
+import React from "react";
 
+import News from "../../components/News/index";
+import Header from "../../components/Pedido";
 
-import News from '../../components/News/index';
-import Header from '../../components/Pedido';
-
-
-import './styles.css';
+import "./styles.css";
 
 const Feed = () => {
-    
-  return (
-    <div>
-        <Header/>
-        <News/>
-
-    </div >
-  );
+  return <News />;
 };
 
 export default Feed;
